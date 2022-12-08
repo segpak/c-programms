@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+
+int
+main ()
+{
+  int i = 0, j = 6, k;
+  char a[7], b[7];
+  printf ("enter the string ");
+  scanf ("%s", a);
+  while (i <= 6)
+    {
+      printf ("%c", a[i]);
+      while (j == (6 - i))
+	{
+	  b[j] = a[i];
+	  j--;
+	}
+      i++;
+    }
+    printf("\n");
+  for (k = 0; k <= 6; k++)
+    {
+      printf ("%c", b[k]);
+    }
+  return 0;
+}
